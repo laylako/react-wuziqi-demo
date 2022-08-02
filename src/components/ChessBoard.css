@@ -1,0 +1,20 @@
+.border {
+  background-color: rgb(84, 52, 19);
+  border-bottom: 5px solid rgb(84, 52, 19);
+  border-radius: 8px;
+}
+.board-contain {
+  position: relative;
+  background-color: rgb(245, 207, 121);
+  display: flex;
+  border-radius: 8px;
+  border: 3px solid rgb(191, 128, 50);
+}
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+canvas {
+  display: block;
+}

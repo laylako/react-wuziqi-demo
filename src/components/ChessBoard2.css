@@ -1,0 +1,66 @@
+.board {
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0;
+  grid-template-columns: repeat(15, 34px);
+  grid-template-rows: repeat(15, 34px);
+  padding: 0px;
+}
+.board-cell {
+  border: 1px solid rgb(122, 91, 46);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.last-row {
+  border-bottom: 2px solid rgb(122, 91, 46);
+}
+.last-col {
+  border-right: 2px solid rgb(122, 91, 46);
+}
+.first-row {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.first-col {
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+.cell-click {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  z-index: 12;
+  margin-right: -17px;
+  margin-bottom: -17px;
+}
+.main-cell-black {
+  width: 32px;
+  height: 32px;
+  margin-right: -17px;
+  margin-bottom: -17px;
+  border-radius: 50%;
+  background-color: #333333;
+  box-shadow: 0px 2px 5px 2px #eee;
+}
+.main-cell-white {
+  position: relative;
+  z-index: 11;
+  width: 32px;
+  height: 32px;
+  margin-right: -17px;
+  margin-bottom: -17px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 2px rgb(226, 226, 226);
+}
+.red-marker {
+  color: red;
+  font-size: 17px;
+  z-index: 13;
+  line-height: 34px;
+  margin-right: -6px;
+  margin-bottom: -17px;
+}

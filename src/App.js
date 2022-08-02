@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import ChessBoard from './components/ChessBoard';
 import './App.css';
 
+const robotImg = require('./assets/robot.png')
+const johnImg = require('./assets/John.png')
+const whiteImg = require('./assets/white.png')
+const blackImg = require('./assets/black.png')
+
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main'>
+      <div className='game-contain'>
+        <div className='avatar-contain'>
+          <div className='avatar-div'>
+            <img src={robotImg}></img>
+            <span className='avatar-span'>Robot</span>
+            <img src={blackImg} width={26} height={26}></img>
+          </div>
+          <div className='avatar-div'>
+            <img src={whiteImg} width={24} height={24} className='avatar-border'></img>
+            <span className='avatar-span'>John</span>
+            <img src={johnImg}></img>
+          </div>
+        </div>
+        <ChessBoard />
+      </div>
     </div>
   );
 }
